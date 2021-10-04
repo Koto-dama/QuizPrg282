@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace QuizPrg282
         public Form1()
         {
             InitializeComponent();
+            lbMain.Items.Clear();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -24,7 +26,8 @@ namespace QuizPrg282
 
         private void btnRead_Click(object sender, EventArgs e)
         {
-
+            
+            
         }
     }
 }
