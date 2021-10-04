@@ -16,5 +16,15 @@ namespace QuizPrg282
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRead_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
