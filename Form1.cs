@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace QuizPrg282
 {
@@ -26,8 +27,19 @@ namespace QuizPrg282
 
         private void btnRead_Click(object sender, EventArgs e)
         {
-            
-            
+            string path = @".\Untitled.txt";
+            string details;
+            if (File.Exists(path))
+            {
+                using (StreamReader sr = new StreamReader(path))
+                {
+                    while ((details = sr.ReadLine()) != null)
+                    {
+                        lbMain.Items.Add(details);
+                    }
+                }
+            }
+            else MessageBox.Show("File does not exist");
         }
     }
 }
